@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalcuatorAPP.MainPage">
+
+    <StackLayout
+        Orientation="Vertical">
+        <StackLayout
+        Orientation="Horizontal">
+            <Label x:Name="textBox1" Text="" FontSize="16" Margin="5" TextColor="White" WidthRequest="230" HeightRequest="50"/>
+            <Button x:Name="button16" Clicked="AC_BtnClick"   Text="AC" FontSize="16" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+        </StackLayout>
+
+        <StackLayout
+                    Orientation="Vertical">
+            <StackLayout
+            Orientation="Vertical">
+                <StackLayout
+                    Orientation="Horizontal">
+                    <StackLayout
+                        Orientation="Vertical">
+                        <StackLayout
+                            Orientation="Horizontal">
+                            <Button x:Name="button1" Clicked="NumClick" Text="7" FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                            <Button x:Name="button2" Clicked="NumClick" Text="8" FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                            <Button x:Name="button3" Clicked="NumClick" Text="9" FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                        </StackLayout>
+                        <StackLayout
+                                Orientation="Horizontal">
+                            <Button x:Name="button4" Clicked="NumClick" Text="4" FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                            <Button x:Name="button5" Clicked="NumClick" Text="5" FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                            <Button x:Name="button6" Clicked="NumClick" Text="6" FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                        </StackLayout>
+                        <StackLayout
+                                Orientation="Horizontal">
+                            <Button x:Name="button7" Clicked="NumClick" Text="1" FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                            <Button x:Name="button8" Clicked="NumClick" Text="2" FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                            <Button x:Name="button9" Clicked="NumClick" Text="3" FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                        </StackLayout>
+
+                    </StackLayout>
+                    <StackLayout
+                        Orientation="Horizontal">
+                        <StackLayout
+                        Orientation="Vertical">
+                            <Button x:Name="button15" Clicked="OperatorBtnClick"  Text="/" FontSize="18" Margin="5" TextColor="White" BindingContext="Division" WidthRequest="50" HeightRequest="50"></Button>
+                            <Button x:Name="button11" Clicked="OperatorBtnClick"  Text="*" FontSize="18" Margin="5" TextColor="White" BindingContext="Multiply" WidthRequest="50" HeightRequest="50"></Button>
+                            <Button x:Name="button12" Clicked="OperatorBtnClick"  Text="-" FontSize="18" Margin="5" TextColor="White" BindingContext="Minus" WidthRequest="50" HeightRequest="50"></Button>
+                        </StackLayout>
+                        <StackLayout
+                        Orientation="Vertical">
+                            <Button x:Name="button19" Clicked="DirectlyEqual"  Text="^2" FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                            <Button x:Name="button18" Clicked="DirectlyEqual" Text="^0.5" FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                            <Button x:Name="button13" Clicked="OperatorBtnClick"  Text="+" FontSize="18" Margin="5" TextColor="White" BindingContext="Plus" WidthRequest="50" HeightRequest="50"></Button>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+
+            </StackLayout>
+
+            <StackLayout
+            Orientation="Horizontal">
+                <Button x:Name="button10" Clicked="NumClick"  Text="0" FontSize="18" Margin="5" TextColor="White" WidthRequest="110" HeightRequest="50"></Button>
+                <Button x:Name="button17" Clicked="NumClick"  Text="." FontSize="18" Margin="5" TextColor="White" WidthRequest="50" HeightRequest="50"></Button>
+                <Button x:Name="button14" Clicked="equal"  Text="=" FontSize="18" Margin="5" TextColor="White" BindingContext="Plus" WidthRequest="110" HeightRequest="50"></Button>
+            </StackLayout>
+
+        </StackLayout>
+
+        <StackLayout
+        Orientation="Horizontal">
+
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
